@@ -1,0 +1,224 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.python-version
+
+# Packaging and test artifacts
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+
+# ============================================================
+# Jupyter
+# ============================================================
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Temporary notebook recovery files
+*.nbconvert.ipynb
+*-checkpoint.ipynb
+
+
+# ============================================================
+# Virtual environments and local configuration
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+
+.env
+.env.*
+!.env.example
+
+# Local configuration overrides
+config.local.*
+*.local.yaml
+*.local.yml
+
+
+# ============================================================
+# Secrets and credentials
+# ============================================================
+*.key
+*.pem
+*.p12
+*.pfx
+
+credentials.json
+service-account*.json
+secrets.*
+secret.*
+
+# API-token files
+*_credentials.json
+*_secrets.json
+*_token.json
+
+
+# ============================================================
+# Raw and processed data
+# Keep only README, sample data, and directory placeholders
+# ============================================================
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/README.md
+
+# Category-local raw and processed data, if present
+categories/*/data/raw/*
+!categories/*/data/raw/.gitkeep
+!categories/*/data/raw/README.md
+
+categories/*/data/processed/*
+!categories/*/data/processed/.gitkeep
+!categories/*/data/processed/README.md
+
+# Exclude all Parquet files
+*.parquet
+
+# ============================================================
+# Generated caches
+# These are reproducible intermediate objects, not thesis results
+# ============================================================
+cache/
+**/cache/*
+!**/cache/.gitkeep
+
+outputs/cache/*
+!outputs/cache/.gitkeep
+
+**/outputs/cache/*
+!**/outputs/cache/.gitkeep
+
+# LLM query-generation cache
+**/query_cache/*
+!**/query_cache/.gitkeep
+
+# Stage-2 feature caches
+**/stage2_feature_cache/*
+!**/stage2_feature_cache/.gitkeep
+
+
+# ============================================================
+# Large intermediate candidate pools
+# Aggregate retrieval results and selection summaries remain tracked
+# ============================================================
+**/stage1_candidate_pools/*
+!**/stage1_candidate_pools/.gitkeep
+!**/stage1_candidate_pools/README.md
+
+
+# ============================================================
+# Non-final run outputs
+# Final metrics, QC, manifests, tables, and figures remain tracked
+# ============================================================
+outputs/runs/*
+!outputs/runs/.gitkeep
+
+**/outputs/runs/*
+!**/outputs/runs/.gitkeep
+
+# Temporary and scratch output directories
+**/tmp/*
+!**/tmp/.gitkeep
+
+**/temp/*
+!**/temp/.gitkeep
+
+**/scratch/*
+!**/scratch/.gitkeep
+
+
+# ============================================================
+# Models and checkpoints
+# Model summaries, manifests, and configuration files remain tracked
+# ============================================================
+models/checkpoints/*
+!models/checkpoints/.gitkeep
+
+**/models/checkpoints/*
+!**/models/checkpoints/.gitkeep
+
+**/checkpoints/*
+!**/checkpoints/.gitkeep
+
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+
+# Serialized fitted models
+*.joblib
+*.pickle
+*.pkl
+
+
+# ============================================================
+# Logs
+# ============================================================
+logs/*
+!logs/.gitkeep
+
+**/logs/*
+!**/logs/.gitkeep
+
+*.log
+
+
+# ============================================================
+# Backup, temporary, and autosave files
+# ============================================================
+*.bak
+*.bak_*
+*.backup
+*.old
+*.orig
+*.rej
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Microsoft Office temporary files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+
+# ============================================================
+# Operating systems and editors
+# ============================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+.vscode/
+.idea/
+*.code-workspace
+
+
+# ============================================================
+# Local path and execution metadata
+# ============================================================
+.history/
+.ipython/
+.jupyter/
