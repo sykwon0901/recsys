@@ -79,11 +79,10 @@ The final thesis applies Holm correction to the four Tier-1 RankP - Base tests w
 recsys/
 ├── README.md
 ├── .gitignore
-└── categories/
-    ├── facial_skincare/
-    │   └── [executed notebooks]
-    └── herbal_supplements/
-        └── [executed notebooks]
+├── facial_skincare/
+│   └── [executed notebooks]
+└── herbal_supplements/
+└── [executed notebooks]
 ```
 
 The repository is intentionally notebook-centred. Empty software-package folders are not required. Compact, publication-safe manifests or final tables may be added only when they directly support a thesis result and do not duplicate large notebook outputs.
