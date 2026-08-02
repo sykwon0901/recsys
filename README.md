@@ -175,7 +175,3 @@ The notebooks contain the method-specific setup cells and fixed experimental set
 - Greater observed history depth did not reliably imply larger personalization gains.
 
 The conclusions are specific to the implemented stage policies, candidate interfaces, two selected categories, synthetic-query benchmark, and offline held-out-item task. They should not be interpreted as an online production evaluation or as evidence that retrieval-side personalization is generally ineffective.
-
-## Thesis reference
-
-Kwon, Seon Young (2026). *Adaptive Personalization in Retrieval-based Recommendation*. Master's thesis, Frankfurt School of Finance & Management.
